@@ -108,7 +108,7 @@ class AlreadyRunningFrameCore(wx.Frame):
     def __init__(self, *args, **kwds):
         kwds["style"] = kwds.get("style", 0) | wx.DEFAULT_FRAME_STYLE
         wx.Frame.__init__(self, *args, **kwds)
-        self.SetSize((355, 172))
+        self.SetSize((450, 200))
         self.SetTitle("Load error")
 
         self.panel_1 = wx.Panel(self, wx.ID_ANY)
