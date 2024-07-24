@@ -5,16 +5,15 @@ from pathlib import Path
 p = Path(__file__).parent # for resource files
 
 # todo: make these user-settable
-TIMECLOCK_FILE = p / "timedata.json"
-BACKUP_FOLDER = p / "timedatabackups"
+TIMECLOCK_FILE = p.parent / "timedata.json"
+BACKUP_FOLDER = p.parent / "timedatabackups"
 BACKUPS = True # make backups of the datafiles?
+SETTING_FILE = p.parent / "timekeeper_settings.json"
+SENTINEL_FILE = p.parent / "donttouch.txt"
 
-
-SETTING_FILE = p / "timekeeper_settings.json"
 assets = p / "assets"
 LOGO_FILE = assets / "clock.png"
 XMARK_IMG = assets / "xmark.png"
-SENTINEL_FILE = Path("donttouch.txt")
 STAY_ON_TOP = False
 SETTING_DEFAULT = dict(
     position=(30,30),
