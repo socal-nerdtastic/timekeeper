@@ -8,6 +8,8 @@ import os
 import time
 from functools import partial
 
+import moduleinstaller
+moduleinstaller.gui_check_and_prompt({"wx":"wxpython"})
 import wx
 
 from timekeeper_wxg import ShowTimes, TimeKeeperFrame, AlreadyRunningFrameCore
