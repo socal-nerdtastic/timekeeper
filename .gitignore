@@ -1,3 +1,9 @@
+timekeeper_settings.json
+timedata.json
+donttouch.txt
+timedatabackups
+backups
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
